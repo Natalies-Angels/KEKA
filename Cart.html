@@ -146,6 +146,7 @@
                 <th>Material</th>
                 <th>Description</th>
                 <th>Price</th>
+                <th>Price in Dollers</th>
             </tr>
             <tr>
               <td>
@@ -155,6 +156,7 @@
               </td>
                 <td>Natural fiber known for its durability and softness.</td>
                 <td>Expensive</td>
+                <td>$10</td>
             </tr>
             <tr>
               <td>
@@ -164,6 +166,7 @@
               </td>
                 <td>Lightweight and breathable fabric, suitable for warmer climates.</td>
                 <td>Expensive</td>
+                <td>$11</td>
             </tr>
             <tr>
               <td>
@@ -173,6 +176,7 @@
               </td>
                 <td>Luxurious and smooth fabric with a glossy appearance.</td>
                 <td>Very Expensive</td>
+                <td>$18</td>
             </tr>
             <tr>
               <td>
@@ -182,6 +186,7 @@
               </td>
                 <td>Durable and stain-resistant synthetic material.</td>
                 <td>Affordable</td>
+                <td>$7</td>
             </tr>
             <tr>
               <td>
@@ -191,6 +196,7 @@
               </td>
                 <td>Natural fiber with a coarse texture, ideal for casual settings.</td>
                 <td>Affordable</td>
+                <td>$3</td>
             </tr>
             <tr>
               <td>
@@ -200,6 +206,7 @@
               </td>
                 <td>Man-made fiber with wool-like properties, easy to clean.</td>
                 <td>Moderate</td>
+                <td>$5</td>
             </tr>
         </table>
         </div>
@@ -207,7 +214,7 @@
     
         <!-- Add more items as needed -->
     
-        <div class="container my-5 section-heading">Total
+        <div class="container my-5 section-heading">Totals
           $<span id="total">0.00</span>
       </div>
       
@@ -231,7 +238,12 @@
           // Assign values to rug materials as needed
           var materialValues = {
             "wool": 10.00,
-            "cotton": 8.00
+            "cotton": 11.00,
+            "silk": 18.00,
+            "polyester": 7.00,
+            "jute": 3.00,
+            "acrylic": 5.00
+            
             // Add more materials as needed
           };
           total += materialValues[selectedRugMaterial.value];

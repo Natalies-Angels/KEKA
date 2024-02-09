@@ -24,7 +24,7 @@
                             <li><a class="dropdown-item" href="#">our story</a></li>
                             <li><a class="dropdown-item" href="missionPage.html">our mission</a></li>
                             <li><a class="dropdown-item" href="visionPage.html">our vision</a></li>
-                            <!-- Add more dropdown items as needed -->
+                            
                         </ul>
                     </li>
                 </ul>
@@ -37,11 +37,22 @@
             <!-- Navbar Links on the Right -->
             <div class="d-flex justify-content-end">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="productPage.html">our products</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            our products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">our collections</a></li>
+                            <li><a class="dropdown-item" href="#">our editions</a></li>
+                            <li><a class="dropdown-item" href="#">early access</a></li>
+                            
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">cart</a>
+                        <a class="nav-link" href="cart.html">cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html">checkout</a>
                     </li>
                 </ul>
             </div>
@@ -52,12 +63,13 @@
     <div class="cta-container">
         <div class="full-screen-content">
             <h2>Image/Video goes here</h2>
+            <button type="button" class="btn btn-primary">shop now</button>
+            <p>kindly check out <a href="https://mushstudios.co/">Mush Studios</a> ON PHONE for inspo for this section</p>
         </div>
     </div>
 
-     <div class="product-container">
-        <h2 class="featured-product">Featured Collection</h2>
-        <!-- <h3 class="collection-name">do good collection</h3> -->
+    <!-- <div class="product-container">
+        <h2 class="featured-product">Featured Collection/Products</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Ex aliquam commodi nemo voluptates vel in nisi a, reprehenderit 
         </p>
@@ -72,6 +84,30 @@
                 <img src="image3.jpg" alt="skio">
             </div>
         </div>
+    </div> -->
+    <h2> shop by category</h2>
+
+    <div class="category-container">
+        <div class="card">
+            <img src="#" alt="Wall Hangings">
+            <div class="overlay">
+                <h3>wall hangings</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="#" alt="Floor Rugs">
+            <div class="overlay">
+                <h3>floor rugs</h3>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="#" alt="Cushions">
+            <div class="overlay">
+                <h3>cushions</h3>
+            </div>
+        </div>
     </div>
     <hr class="line">
     <footer>
@@ -83,7 +119,8 @@
         <form>
             <label for="subscribe">Join the community</label><br>
             <input type="text" class="subscribe" placeholder="enter your email address">
-        </form>
+        </form><br><br>
+        <p>copyright ©2024, KEKA</p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

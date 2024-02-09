@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        .customer-address-container {
+            margin-top: 100px; /* Adjust as needed */
+        }
+    </style>
+    </head>
+    <title>KEKA</title>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+                <!-- Navbar Links on the Left -->
+                <div class="d-flex justify-content-start">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                about us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="#">our story</a></li>
+                                <li><a class="dropdown-item" href="missionPage.html">our mission</a></li>
+                                <li><a class="dropdown-item" href="visionPage.html">our vision</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Centered Logo -->
+                <a class="logo mx-auto" href="index.html">
+                    <img src="" alt="Logo" class="d-inline-block align-top">
+                </a>
+        
+                <!-- Navbar Links on the Right -->
+                <div class="d-flex justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                our products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="#">our collections</a></li>
+                                <li><a class="dropdown-item" href="#">our editions</a></li>
+                                <li><a class="dropdown-item" href="#">early access</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="checkout.html">checkout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="customer-address-container container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="mb-4">Customer Address</h2>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="123 Main Street, Cityville, Country">
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="Nairobi">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="john.doe@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="+12345678906">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container customer-address-container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="mb-4">Delivery Details</h2>
+                    <div class="mb-3">
+                        <label for="deliveryDate" class="form-label">Delivery Date</label>
+                        <input type="text" class="form-control" id="deliveryDate" placeholder="February 10, 2024" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="deliveryTime" class="form-label">Delivery Time</label>
+                        <input type="text" class="form-control" id="deliveryTime" placeholder="Between 10:00 AM and 2:00 PM" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="deliveryAddress" class="form-label">Delivery Address</label>
+                        <input type="text" class="form-control" id="deliveryAddress" placeholder="123 Main Street, Cityville, Country" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="specialInstructions" class="form-label">Special Instructions</label>
+                        <input type="text" class="form-control" id="specialInstructions" placeholder="Leave package at doorstep if no one is available" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container customer-address-container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="mb-4">Payment Details</h2>
+                    <div class="mb-3">
+                        <label for="totalAmount" class="form-label">Total Amount</label>
+                        <input type="text" class="form-control" id="totalAmount" placeholder="$100.00" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="paymentMethod" class="form-label">Payment Method</label>
+                        <input type="text" class="form-control" id="paymentMethod" placeholder="Credit Card" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="cardNumber" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="**** **** **** 1234" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="expirationDate" class="form-label">Expiration Date</label>
+                        <input type="text" class="form-control" id="expirationDate" placeholder="12/26" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="billingAddress" class="form-label">Billing Address</label>
+                        <input type="text" class="form-control" id="billingAddress" placeholder="123 Billing Street, Cityville, Country" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
